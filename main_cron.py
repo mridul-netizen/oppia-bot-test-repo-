@@ -1,5 +1,3 @@
-# this is some random cron file
-
 class FrontendErrorHandler(base.BaseHandler):
     """Handles errors arising from the frontend."""
 
