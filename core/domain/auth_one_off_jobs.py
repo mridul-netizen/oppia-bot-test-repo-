@@ -6,10 +6,6 @@ class AuditUserEmailsOneOffJob(jobs.BaseMapReduceOneOffJobManager):
         return [user_models.UserSettingsModel]
 
     @staticmethod
-    def map(user):
-        yield (user.email, user.id)
-
-    @staticmethod
     def reduce(email, user_ids):
         if len(user_ids) > 1:
             yield (
