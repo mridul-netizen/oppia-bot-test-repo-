@@ -1,4 +1,4 @@
-class CronAuthOffJobs(jobs.BaseMapReduceOneOffJobManager):
+class CronAuthOneOffJobs(jobs.BaseMapReduceOneOffJobManager):
     """One-off job to confirm whether every user has a unique email address."""
 
     @classmethod
