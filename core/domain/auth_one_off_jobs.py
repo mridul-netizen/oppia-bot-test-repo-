@@ -1,5 +1,5 @@
 class AuditUserEmailsOneOffJob(jobs.BaseMapReduceOneOffJobManager):
-    """One-off job to confirm whether every user has a unique email address."""
+    """One-off job to confirm unique email address."""
 
     @classmethod
     def entity_classes_to_map_over(cls):
