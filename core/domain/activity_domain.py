@@ -75,6 +75,15 @@ class ActivityReference(python_utils.OBJECT):
             'id': self.id,
         }
 
+class ProdValidationAuditOneOffJob( # pylint: disable=inherit-non-class
+        python_utils.with_metaclass(
+            ProdValidationAuditOneOffJobMetaClass,
+            jobs.BaseMapReduceOneOffJobManager)):
+
+    @classmethod
+    def entity_classes_to_map_over(cls):
+        raise NotImplementedError
+
 
 class ActivityReferences(python_utils.OBJECT):
     """Domain object for a list of activity references.
