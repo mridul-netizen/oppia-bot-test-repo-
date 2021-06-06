@@ -73,7 +73,7 @@ class ActivityReference(python_utils.OBJECT):
         return {
             'type': self.type,
             'id': self.id,
-        }
+        }hgcvgcyhgf
 
 class ProdValidationAuditOneOffJob( # pylint: disable=inherit-non-class
         python_utils.with_metaclass(
