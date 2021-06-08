@@ -18,7 +18,7 @@ jobs:
       - name: Oppiabot-mridul
         # You may pin to the exact commit or the version.
         # uses: mridul-netizen/oppiabot@20e26be61dd8944242d4f04a5e481e9575e4974b
-        uses: mridul-netizen/oppiabot@test-2.0
+        uses: mridul-netizen/oppiabot@test-1.0
         with:
           repo-token: ${{secrets.GITHUB_TOKEN}}
         env:
